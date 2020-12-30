@@ -1,0 +1,131 @@
+{
+    "name": "TransaccionCategorizable",
+    "namespace": "com.myvaluesolutions.abanca.kafka.avro",
+    "type": "record",
+    "fields": [{
+            "default": null,
+            "name": "movimientoId",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        {
+            "default": null,
+            "name": "productoId",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        {
+            "default": null,
+            "name": "fechaOperacion",
+            "type": [
+                "null",
+                {
+                    "logicalType": "timestamp-millis",
+                    "type": "long"
+                }
+            ]
+        },
+        {
+            "default": null,
+            "name": "fechaValor",
+            "type": [
+                "null",
+                {
+                    "logicalType": "timestamp-millis",
+                    "type": "long"
+                }
+            ]
+        },
+        {
+            "default": null,
+            "name": "importe",
+            "type": [
+                "null",
+                {
+                    "connect.name": "org.apache.kafka.connect.data.Decimal",
+                    "connect.parameters": {
+                        "connect.decimal.precision": "19",
+                        "scale": "4"
+                    },
+                    "connect.version": 1,
+                    "logicalType": "decimal",
+                    "precision": 19,
+                    "scale": 4,
+                    "type": "bytes"
+                }
+            ]
+        },
+        {
+            "default": null,
+            "name": "concepto",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        {
+            "default": null,
+            "name": "conceptoAmpliado",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        {
+            "default": null,
+            "name": "saldoFinal",
+            "type": [
+                "null",
+                {
+                    "connect.name": "org.apache.kafka.connect.data.Decimal",
+                    "connect.parameters": {
+                        "connect.decimal.precision": "19",
+                        "scale": "4"
+                    },
+                    "connect.version": 1,
+                    "logicalType": "decimal",
+                    "precision": 19,
+                    "scale": 4,
+                    "type": "bytes"
+                }
+            ]
+        },
+        {
+            "default": null,
+            "name": "localidad",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        {
+            "default": null,
+            "name": "descripcionOperacion",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        {
+            "default": null,
+            "name": "codigoTransaccion",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        {
+            "default": null,
+            "name": "codigoOperacion",
+            "type": [
+                "null",
+                "string"
+            ]
+        }
+    ]
+
+}
